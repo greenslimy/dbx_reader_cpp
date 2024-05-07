@@ -3,8 +3,6 @@
 #include "dbx_file.h"
 #include "email.h"
 
-const uint8_t BufferLengthPtr = 0x7c;   //Where the size of the Header and Middle Sector is found
-
 void getSelection(DbxFile* file, uint8_t** buffer) {
     uint32_t entries = file->header->GetField(IndexedMessagesCount);
     uint32_t selected = 0;
@@ -24,24 +22,27 @@ void getSelection(DbxFile* file, uint8_t** buffer) {
     }
 }
 
-int main()
+int main(int argc, char* argsv[])
 {
-    std::ifstream file;
-    file.open("D:/Backup/Old PCs/Family PCs/Email/OOOLD Email/Sent Items.dbx", std::ios::binary | std::ios::ate);
+    if (argc > 1) {
+        std::ifstream file;
+        file.open(argsv[1], std::ios::binary | std::ios::ate);
 
-    size_t fileSize = 0;
-    if (file.is_open()) {
-        fileSize = file.tellg();
-        file.seekg(0, std::ios::beg);
-        uint8_t* buffer = new uint8_t[fileSize];
-        file.read((char*)buffer, fileSize);
-        file.close();
+        size_t fileSize = 0;
+        if (file.is_open()) {
+            fileSize = file.tellg();
+            file.seekg(0, std::ios::beg);
+            uint8_t* buffer = new uint8_t[fileSize];
+            file.read((char*)buffer, fileSize);
+            file.close();
 
-        DbxFile dbx(&buffer, fileSize);
-        getSelection(&dbx, &buffer);
-    }
-    else {
-        std::cout << "Unable to open file!";
+            DbxFile dbx(&buffer, fileSize);
+            getSelection(&dbx, &buffer);
+        } else {
+            std::cout << "Unable to open file!";
+        }
+    } else {
+        std::cout << "You must supply a .dbx file path to read." << std::endl;
     }
 }
 

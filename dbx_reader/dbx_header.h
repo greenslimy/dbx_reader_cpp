@@ -9,6 +9,7 @@ const int HeaderEntries = 0x92f;
 const uint16_t Magic = 0x0,
 CLSID = 0x4,
 MessageTreeNodesPtr = 0x30,
+BufferLengthPtr = 0x7C,
 MessageConditionsPtr = 0x88,
 FolderConditionsPtr = 0x8C,
 IndexedMessagesCount = 0xC4,
