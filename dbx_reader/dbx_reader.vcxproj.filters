@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\messages">
+      <UniqueIdentifier>{8991dd33-0084-4dd3-b650-94222ad7c7b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbx">
+      <UniqueIdentifier>{e6b773ce-3cd5-4889-a831-665be0cf4cf8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message_tree_node.cpp">
+      <Filter>Source Files\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="message_tree.cpp">
+      <Filter>Source Files\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="email.cpp">
+      <Filter>Source Files\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="dbx_file.cpp">
+      <Filter>Source Files\dbx</Filter>
+    </ClCompile>
+    <ClCompile Include="dbx_header.cpp">
+      <Filter>Source Files\dbx</Filter>
+    </ClCompile>
+    <ClCompile Include="dbx_database.cpp">
+      <Filter>Source Files\dbx</Filter>
+    </ClCompile>
+    <ClCompile Include="conditions.cpp">
+      <Filter>Source Files\dbx</Filter>
+    </ClCompile>
+    <ClCompile Include="message_body_block.cpp">
+      <Filter>Source Files\messages</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dbx_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbx_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="conditions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_tree_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="email.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbx_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_body_block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Backup\Old PCs\Family PCs\Email\OOOLD Email\Sent Items.dbx">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
